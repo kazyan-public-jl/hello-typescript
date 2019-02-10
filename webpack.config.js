@@ -18,6 +18,10 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
+        test: /\.ts$/,
+        use : 'awesome-typescript-loader'
+      },
+      {
         test: /\.(css|sass|scss)$/,
         loader: 'sass-loader',
         options: {
@@ -36,7 +40,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js','json','jsx','.vue'],
+    extensions: ['.js','json','jsx','.vue','.ts'],
     alias: {
       vue$: 'vue/dist/vue.esm.js',
     },
