@@ -15,7 +15,6 @@ export default {
       greet: {},
       username: "USER NAME",
       text: 'Hello TS_tutorials Page',
-      // greeterHelloMsg: greeterHello("PUBLIC HELLO"),
     }
   },
   created(){
@@ -24,8 +23,7 @@ export default {
   computed:{
       greeterMsg(){ return this.greet.introduceMySelf() },
       greeterSay(){ return this.greet.greeter("test") },
-      greeterHelloMsg(){ return greeterHello(this.username) },
-    
+      greeterHelloMsg(){ return greeterHello(this.username) },    
   }
 };
 </script>

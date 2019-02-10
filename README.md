@@ -54,14 +54,34 @@ localhost:8080
 
 `yarn add` したかったので [Typescriptのコンパイル環境を作成する(webpack 4.0.0) - Qiita](https://goo.gl/Kiq56q) から抜粋
 ```
-yarn add -D ts-loader typescript
+yarn add -D ts-loader typescript ts-loader
 ```
 
 ### 2. greeter.ts 実行
 
+tscコマンドが認識されなかったので、自前でaliasを作成。
 ```
 alias tsc='./node_modules/.bin/tsc'
 ```
+
+webpack.config.js に typescript 変換の記述を追加
+```webpack.config.js
+// module.rulesにts-loader追加
+module:{
+    rules:{
+        {
+        test: /\.ts$/,
+        use : 'ts-loader'
+        },
+    }
+}
+
+// extensionsに .ts を追加
+resolve: {
+    extensions: ['.js','json','jsx','.vue','.ts'],
+}
+```
+
 
 ## 記事に記載されてなかったので対応したこと
 
