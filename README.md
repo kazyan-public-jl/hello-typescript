@@ -57,6 +57,11 @@ localhost:8080
 yarn add -D ts-loader typescript
 ```
 
+### 2. greeter.ts 実行
+
+```
+alias tsc='./node_modules/.bin/tsc'
+```
 
 ## 記事に記載されてなかったので対応したこと
 
