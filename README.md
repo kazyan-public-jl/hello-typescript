@@ -14,18 +14,11 @@ cd test-typescript
 # 必要モジュールのインストール
 yarn
 
-#画面確認用のサーバーを起動する
-yarn start
-```
+# コンパイル
+tsc
 
-ブラウザで以下にアクセス
-```
-#win
-localhost:8080
-
-#mac
-127.0.0.1:8080
-localhost:8080
+# 実行確認
+node dist/hello.js
 ```
 
 以上。
@@ -39,7 +32,8 @@ localhost:8080
 ### TypeScriptの各種機能を使ってみて、理解できていること
 
 1. typescriptのインストール
-2. 
+2. typescriptのコンパイル方法
+3. typescriptから生成したファイルの実行方法
 
 ## 参考
 

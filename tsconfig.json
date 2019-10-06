@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
-        "outDir": "./dest/",
+        "outDir": "./dist/",
+        "target": "es5",
         "sourceMap": true,
         "strict": true,
         "module": "es2015",
-        "moduleResolution": "node",
-        "target": "es5",
-        "experimentalDecorators": true
+        "moduleResolution": "node"
     },
+    "files": [
+        "src/hello.ts"
+    ],
     "include": [
         "./src/**/*"
     ]
